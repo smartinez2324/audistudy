@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: plum;
+
+}
+
+#start{
+    background: purple;
+
+}
+/*Fondo Pantalla bienvenida*/
+#welcome{
+   background-image: url(../img/Fons.png);
+   background-size: cover;
+}
+.barrah{
+    background-image: url(../img/Barra_notificacions.png);
+    width: 20rem;
+    height: 1.5rem;
+    background-size:100%;
+    position: relative;
+    margin: 0 auto;
+    top: 0.5rem;
+    
+}
+h1{
+    color: white;
+    font-family: sf_pro_display;
+    position:absolute;
+    left: 2.75rem;
+    top:25rem;
+    font-size: 1.5rem;
+
+}
+ /*Fuente Sf_pro_display*/
+ @font-face {
+    font-family: sf_pro_display;
+    src: url(../fonts/sf_pro_display/SFProDisplay-Bold.woff) format('woff');
+    src: url(../fonts/sf_pro_display/SFProDisplay-Bold.svg) format('svg');
+    src: url(../fonts/sf_pro_display/SFProDisplay-Bold.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*Fuente Monserrat*/
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/montserrat1/Montserrat-Thin.woff) format('woff');
+    src: url(../fonts/montserrat1/Montserrat-Thin.svg) format('svg');
+    src: url(../fonts/montserrat1/Montserrat-Thin.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+#text{
+    color: white;
+    font-family: montserrat;
+    position: absolute;
+    left: 4.813rem;
+    top: 30rem;
+}
+
+
+#idioma{
+    width: 20rem;
+    height: 2rem;
+    background-color: rgb(255, 255, 255, .5);
+    border-radius: 5rem;
+    color: rgb(255, 255, 255);
+    font-family: montserrat;
+    position: absolute;
+    left: 4.813rem;
+    top: 40rem;
+}
+#ubicacio{
+    width: 20rem;
+    height: 2rem;
+    background-color: rgb(255, 255, 255, .5);
+    color: rgb(255, 255, 255);
+    font-family: montserrat;
+    border-radius: 5rem;
+    position: absolute;
+    left: 4.813rem;
+    top: 43rem;
+}
+
+
+#login{
+    background: green;
+
+}
+#register{
+    background:greenyellow;
+
+}
+#politiques{
+    background: gray;
+
+}
+#home{
+    background: #0D1E58;
+
+}
+
+
+
+#start img{
+    position: absolute;
+    width: 10rem;
+    height: 8rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-5rem, -4rem);
+
+}
+
+.botonera{
+    background: rgb(70, 70, 70, .5);
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   
+}
+
+.botonera ul{
+    
+}
+
+.botonera ul li{
+    display: block;
+    width: 20vw;
+    height: 10vh;
+    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+
+.botonera ul li:hover{
+    background-color: navy;
+}
+
+.inici{
+    background-image: url(../img/inici.png);
+}
+.explorar {
+    background-image: url(../img/explorar.png);
+
+}
+.penjar{
+    background-image: url(../img/penjar.png);
+}
+.biblioteca{
+    background-image: url(../img/biblioteca.png);
+}
+
+.perfil{
+    background-image: url(../img/perfil.png);
+}
+
+
+/* Pantalla carregant*/
+#autor{
+    background-image: url(../img/Fons.png);
+    background-size: cover;
+}
+
+.circulo{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+}
+
+.circulo:before{
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border: 1rem solid;
+    background-image: conic-gradient(red 20deg, transparent 120deg);
+    animation: rotar 2s linear infinite;
+}
+
+@keyframes rotar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+.circulo::after{
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: #ffff;
+    border-radius: 50%;
+}
+/*pantalla inici audios*/
+#barrainici{
+    background-color: #f4ecec36;
+    backdrop-filter: blur(0.4rem);
+    width: 100%;
+    height: 12vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10000;
+}
+.Inici2{
+    top:0.7rem;
+    position: relative;
+    text-align: center;
+    left: 0;
+}
+.AudioTitol{
+    top: 7rem;
+    left: 1.8rem;
+    font-size: 2.3rem;
+    overflow-y: scroll;
+}
+.destacats{
+    top: 10.3rem;
+    left: 1.8rem;
+    font-size: 1.4rem;
+}
+.filtres{
+   position: relative;
+   left: 22rem;
+   top: 3rem;
+}
+
+.slider{
+    width: 235vw;
+    height: 47vw;
+}
+.song{
+    width:40vw;
+    height: 60vw;
+    margin: 3.5vw;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+h4{
+    color: white;
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    font-family: Montserrat;
+    text-align: center;
+    top: 10.5rem;
+}
+h5{
+    color: rgba(217, 213, 213, 0.867);
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    font-family: Montserrat;
+    text-align: center;
+    top: 12rem;
+    font-size: 0.9rem;
+}
+h6{
+    color: rgba(217, 213, 213, 0.867);
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    font-family: Montserrat;
+    text-align: center;
+    top: 13rem;
+    font-size: 0.9rem;
+}
+.asignatura{
+    font-family: montserrat;
+    font-size: 1.2rem;
+    top: 23.4rem;
+}
+.playlist{
+    margin-bottom: 1rem;
+    overflow-x: scroll;
+}
+.musicacerca{
+    margin-top: 12rem;
+}
+.mepuedeinteresar{
+    margin-bottom: 5rem;
+}
+
+
+/*Audio Playing*/
